@@ -1,0 +1,215 @@
+body {
+  margin: 20px 40px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+/*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+.wrapper {
+  display: flex;
+  height: 60px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+/*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+.redExample {
+  flex: 1;
+  background-color: red;
+}
+
+/*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+.blueExample {
+  flex: 1;
+  background-color: blue;
+}
+
+/*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+.emptyExample2 {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+}
+
+.blueExample2 {
+  width: 80px;
+  background-color: blue;
+}
+
+/* TODO: Add CSS for the rest of your solution below */
+
+#wrapper1 {
+  display: grid;
+  grid-template-columns: 80px 10fr 80px;
+}
+
+.red3 {
+  background-color: red;
+}
+
+.green3 {
+  background-color: green;
+}
+
+.blue3 {
+  background-color: blue;
+}
+
+/* row4 */
+
+#wrapper4 {
+  display: grid;
+  grid-template-columns: 9fr 80px;
+}
+
+.red4 {
+  background-color: red;
+}
+
+.blue4 {
+  background-color: blue;
+}
+
+/* row5 */
+
+#wrapper5 {
+  display: flex;
+  justify-content: center;
+}
+
+.red5 {
+  width: 35px; /* Ширина красной полосы */
+  height: 35px; /* Высота красной полосы */
+  background-color: red;
+  margin-top: 15px;
+}
+
+/* row6 */
+
+#wrapper6 {
+  display: grid;
+  grid-template-columns: 6fr 1fr 6fr;
+}
+
+.red6 {
+  background-color: red;
+}
+
+.blue6 {
+  background-color: blue;
+}
+
+.red66 {
+  background-color: red;
+}
+
+/* row7 */
+
+#wrapper7 {
+  display: grid;
+  grid-template-columns: 80px 9fr;
+}
+.red7 {
+  grid-column-start: 1;
+  background-color: red;
+}
+
+#newone1 {
+  display: grid;
+  grid-template-rows: 3fr 3fr 3fr;
+}
+
+.blue7 {
+  background-color: blue;
+}
+
+.blue77 {
+  background-color: blue;
+}
+
+/* row8 */
+
+/* #wrapper8 {
+  display: grid;
+  grid-template-columns: 2fr 6fr 2fr 6fr 2fr 6fr 2fr 6fr 2fr;
+}
+
+.orange1 {
+  background-color: orange;
+}
+
+.orange2 {
+  background-color: orange;
+}
+.orange3 {
+  background-color: orange;
+}
+.orange4 {
+  background-color: orange;
+}
+.orange5 {
+  background-color: orange;
+}
+
+.green8 {
+  background-color: green;
+}
+.green9 {
+  background-color: green;
+}
+.green10 {
+  background-color: green;
+}
+.green11 {
+  background-color: green;
+}
+
+@media only screen and (max-width: 600px) {
+  .orange1,
+  .orange2,
+  .orange3,
+  .orange4,
+  .orange5 {
+    background-color: green;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .green8,
+  .green9,
+  .green10,
+  .green11 {
+    background-color: orange;
+  }
+} */
+
+.wrapper8 div {
+  height: 60px;
+  flex: 3;
+}
+
+.wrapper8 div:nth-child(odd) {
+  background-color: orange;
+  max-width: 50px;
+}
+
+/* row9 */
+.wrapper9 div {
+  height: 60px;
+  flex: 3;
+}
+
+.wrapper9 div:nth-child(odd) {
+  background-color: orange;
+  flex: 30;
+}
+
+@media (max-width: 756px) {
+  .wrapper9 div:nth-child(odd) {
+    max-width: 50px;
+  }
+}
